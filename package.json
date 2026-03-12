@@ -1,0 +1,14 @@
+{
+  "name": "fastify-server",
+  "version": "1.0.0",
+  "description": "Fastify server with static HTML and API endpoint",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "@fastify/static": "^6.12.0"
+  }
+}
