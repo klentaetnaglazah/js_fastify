@@ -8,7 +8,8 @@
     "dev": "node --watch server.js"
   },
   "dependencies": {
-    "@fastify/static": "^6.12.0",
-    "fastify": "^4.29.1"
+    "@fastify/view": "^8.2.0",
+    "fastify": "^4.29.1",
+    "pug": "^3.0.4"
   }
 }

@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Создание пользователя
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+      
+      h1 {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin: 15px 0 5px;
+      }
+      
+      input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        width: 100%;
+      }
+      
+      .back-link {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+      }
+
+  body
+    h1 Создание пользователя
+    
+    form(method="POST" action="/users")
+      label(for="name") Имя
+      input#name(
+        type="text" 
+        name="name" 
+        required
+      )
+      
+      label(for="email") Email
+      input#email(
+        type="email" 
+        name="email" 
+        required
+      )
+      
+      button(type="submit") Создать
+      
+    a.back-link(href="/users") ← Назад к списку

@@ -1,0 +1,42 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Список пользователей
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+      
+      h1 {
+        margin-bottom: 20px;
+      }
+      
+      .user-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .add-link {
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+  body
+    h1 Пользователи
+    
+    if users.length > 0
+      each user in users
+        .user-item
+          strong #{user.name}
+          |  — 
+          span #{user.email}
+          |  (ID: #{user.id})
+    else
+      p Нет пользователей
+    
+    a.add-link(href="/users/create") Добавить пользователя
