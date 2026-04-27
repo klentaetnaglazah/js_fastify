@@ -15,15 +15,22 @@ html(lang="ru")
       h1 {
         margin-bottom: 20px;
       }
-      
+
       .user-item {
         padding: 10px 0;
         border-bottom: 1px solid #ccc;
       }
-      
+      .actions {
+        display: inline-flex;
+        gap: 10px;
+        margin-left: 15px;
+      }
       .add-link {
         display: inline-block;
         margin-top: 20px;
+      }
+      button {
+        cursor: pointer;
       }
 
   body
@@ -36,6 +43,10 @@ html(lang="ru")
           |  — 
           span #{user.email}
           |  (ID: #{user.id})
+          .actions
+            a(href=`/users/${user.id}/edit`) Редактировать
+            form(method="POST" action=`/users/${user.id}/delete` style="display:inline")
+              button(type="submit") Удалить
     else
       p Нет пользователей
     

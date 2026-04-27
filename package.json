@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fastify/view": "^8.2.0",
+    "better-sqlite3": "^12.9.0",
     "fastify": "^4.29.1",
     "pug": "^3.0.4"
   }
