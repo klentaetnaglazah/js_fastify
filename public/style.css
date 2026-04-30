@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.user-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.actions {
+  display: inline-flex;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.back-link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
